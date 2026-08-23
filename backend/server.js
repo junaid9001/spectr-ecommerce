@@ -79,6 +79,11 @@ const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 
+// Lightweight health check endpoint for pings/uptime monitoring
+app.get(['/api/health', '/health'], (req, res) => {
+  res.status(200).json({ status: "UP", timestamp: new Date() });
+});
+
 // Mount Routes (Supports both clean /api prefix and direct / compatibility paths)
 app.use('/api/users', authRoutes);
 app.use('/users', authRoutes);
