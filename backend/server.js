@@ -79,6 +79,10 @@ const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 
+const authRoutesValo = require('./routes/authRoutesValo');
+const productRoutesValo = require('./routes/productRoutesValo');
+const orderRoutesValo = require('./routes/orderRoutesValo');
+
 // Lightweight health check endpoint for pings/uptime monitoring
 app.get(['/api/health', '/health'], (req, res) => {
   res.status(200).json({ status: "UP", timestamp: new Date() });
@@ -93,6 +97,16 @@ app.use('/products', productRoutes);
 
 app.use('/api/orders', orderRoutes);
 app.use('/orders', orderRoutes);
+
+// Mount VALO SKIN Routes
+app.use('/api/users_valo', authRoutesValo);
+app.use('/users_valo', authRoutesValo);
+
+app.use('/api/products_valo', productRoutesValo);
+app.use('/products_valo', productRoutesValo);
+
+app.use('/api/orders_valo', orderRoutesValo);
+app.use('/orders_valo', orderRoutesValo);
 
 // Fallback error handler
 app.use((err, req, res, next) => {
