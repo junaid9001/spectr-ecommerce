@@ -1,0 +1,216 @@
+/* ===== DEDICATED ORDERS PAGE — Premium Editorial Layout ===== */
+
+.orders-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 120px clamp(20px, 5vw, 80px) 60px;
+}
+
+/* Page Header & Navigation Link */
+.orders-header {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 25px;
+}
+
+.back-to-profile {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-to-profile:hover {
+  color: #000;
+}
+
+.orders-title {
+  font-family: 'Michroma', sans-serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0;
+}
+
+/* Main Container */
+.orders-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* Individual Order Block Group */
+.order-group-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  padding: 30px;
+}
+
+.order-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.order-meta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-id-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.order-date-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(0, 0, 0, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.order-status-badge {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* List of items inside this order */
+.order-group-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-group-item-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.order-group-item-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.order-group-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-group-item-name {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #000;
+  margin: 0;
+}
+
+.order-group-item-details {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.order-group-item-price {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Order total in header card */
+.order-group-summary {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 16px;
+  margin-top: 15px;
+}
+
+.order-group-total-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.order-group-total-val {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Empty State */
+.orders-empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.orders-empty-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .order-group-card {
+    padding: 20px;
+  }
+  .order-group-item-row {
+    grid-template-columns: 60px 1fr;
+    gap: 16px;
+  }
+  .order-group-item-price {
+    grid-column: 1 / -1;
+    text-align: right;
+    margin-top: -10px;
+  }
+}

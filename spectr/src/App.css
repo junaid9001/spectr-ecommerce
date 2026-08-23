@@ -1,0 +1,46 @@
+html,body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1600px;
+  overflow-x: hidden;
+}
+
+/* Scroll snapping styles for desktop */
+.home-snap-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.home-snap-container::-webkit-scrollbar {
+  display: none;
+}
+
+.home-snap-section {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Snap to the bottom of the page for the last section (Footer) on desktop */
+.home-snap-section:last-child {
+  height: auto;
+  scroll-snap-align: end;
+}
+
+/* Turn off scroll snapping and hardcoded heights on tablet/mobile screens */
+@media screen and (max-width: 768px) {
+  .home-snap-container {
+    height: auto;
+    overflow-y: visible;
+    scroll-snap-type: none;
+  }
+  
+  .home-snap-section {
+    scroll-snap-align: none;
+    height: auto; /* Allow height to flow naturally based on content */
+  }
+}

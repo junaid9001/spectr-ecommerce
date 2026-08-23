@@ -1,0 +1,385 @@
+/* ===== ADMIN DASHBOARD — Premium Editorial Layout ===== */
+
+.admin-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 120px clamp(20px, 5vw, 80px) 60px;
+  box-sizing: border-box;
+}
+
+/* Header & Menu Nav */
+.admin-header {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.admin-title {
+  font-family: 'Michroma', sans-serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0;
+}
+
+.back-to-store {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.back-to-store:hover {
+  color: #000;
+}
+
+/* Nav Menu Tabs */
+.admin-menu {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 12px;
+}
+
+.admin-menu-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.admin-menu-link:hover,
+.admin-menu-link.active {
+  color: #000;
+}
+
+/* KPIs Metrics Grid */
+.stats-grid {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.stat-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 30px 24px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.stat-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.45);
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: block;
+}
+
+.stat-value {
+  font-family: 'Michroma', sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  color: #000;
+  margin: 12px 0 0 0;
+  font-weight: normal;
+}
+
+/* Orders Desk */
+.admin-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.admin-section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.admin-table th {
+  background-color: #fafafa;
+  border-bottom: 1.5px solid #000;
+  padding: 18px 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.admin-table td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 16px 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
+  color: rgba(0, 0, 0, 0.7);
+  vertical-align: middle;
+}
+
+.admin-table tr:hover {
+  background-color: #fafafa;
+}
+
+/* Order Item Grid */
+.admin-order-item-cell {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-order-item-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  background-color: #f8f8f8;
+}
+
+.admin-order-item-name {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+/* Shipping Status Toggle */
+.status-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.processing {
+  color: #c29500;
+}
+
+.status-badge.shipped {
+  color: #004dc2;
+}
+
+.status-badge.delivered {
+  color: #088012;
+}
+
+.admin-status-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-action-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-action-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Custom Visual Sales Chart */
+.admin-chart-section {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.admin-chart-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.admin-chart-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.admin-chart-subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: -15px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* Top Selling Sidebar list */
+.top-selling-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-selling-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.top-selling-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.top-selling-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.top-selling-name {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 0 4px 0;
+}
+
+.top-selling-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.top-selling-sales {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #000;
+}
+
+@media (max-width: 960px) {
+  .admin-chart-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Category Sales Progress Bars */
+.category-row {
+  margin-bottom: 20px;
+}
+
+.category-row:last-child {
+  margin-bottom: 0;
+}
+
+.category-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.category-count-label {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.category-bar-track {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.category-bar-fill {
+  height: 100%;
+  background-color: #000;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Adjust KPIs grid to support 5 cards cleanly on wide views */
+@media (min-width: 1200px) {
+  .stats-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+

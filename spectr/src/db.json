@@ -1,0 +1,629 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "a@a",
+      "password": "admin123",
+      "cart": [
+        {
+          "productid": "3",
+          "quantity": 1
+        }
+      ],
+      "orders": [
+        {
+          "id": "19",
+          "name": "Cartier Panthère de Cartier CT0433S sunglasses",
+          "price": 140000,
+          "img": "/images/item19.png",
+          "imga": "/images/item19a.png",
+          "brand": "Cartier",
+          "category": "sunglasses",
+          "description": "Iconic luxury eyewear with timeless design and exquisite finishing, combining elegance with a futuristic flair.",
+          "features": [
+            "Premium metal and acetate frame",
+            "UV protection lenses",
+            "Timeless luxury design",
+            "Ergonomic comfortable fit",
+            "Durable and high-quality",
+            "Fashion-forward statement",
+            "Exquisite finishing"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Dystopian Verge Glasses, armour for the bold spirit",
+          "price": 60000,
+          "img": "/images/item13.png",
+          "imga": "/images/item13a.png",
+          "brand": "Dystopian Verge",
+          "category": "sunglasses",
+          "description": "Bold and futuristic, these glasses embody a post-apocalyptic aesthetic with sharp angles, sleek carbon fiber frames, and a striking visual presence. Perfect for fashion-forward individuals seeking an avant-garde statement.",
+          "features": [
+            "Carbon fiber lightweight frame",
+            "Futuristic angular design",
+            "UV400 protection lenses",
+            "Anti-glare coating",
+            "Adjustable nose pads",
+            "Bold fashion statement",
+            "High durability"
+          ],
+          "quantity": 5
+        },
+        {
+          "id": "1",
+          "name": "Dystopian Verge, bold spirit",
+          "price": 60000,
+          "img": "/images/item13.png",
+          "imga": "/images/item13a.png",
+          "brand": "Dystopian Verge",
+          "category": "sunglasses",
+          "description": "Bold and futuristic, these glasses embody a post-apocalyptic aesthetic with sharp angles, sleek carbon fiber frames, and a striking visual presence. Perfect for fashion-forward individuals seeking an avant-garde statement.",
+          "features": [
+            "Carbon fiber lightweight frame",
+            "Futuristic angular design",
+            "UV400 protection lenses",
+            "Anti-glare coating",
+            "Adjustable nose pads",
+            "Bold fashion statement",
+            "High durability"
+          ],
+          "quantity": 2
+        },
+        {
+          "id": "2",
+          "name": "Ray-Ban Meta Wayfarer Smart",
+          "price": 45000,
+          "img": "/images/item8.webp",
+          "imga": "/images/item8a.webp",
+          "brand": "Ray-Ban Meta",
+          "category": "smart_glasses",
+          "description": "Classic Wayfarer style meets cutting-edge AR technology. These smart glasses let you stay connected, capture moments, and interact with digital content seamlessly while maintaining iconic Ray-Ban style.",
+          "features": [
+            "Built-in AR display",
+            "Voice assistant integration",
+            "Bluetooth audio and calls",
+            "Camera for photo and video capture",
+            "Touch control on frame",
+            "Lightweight comfortable design",
+            "Stylish Wayfarer aesthetic"
+          ],
+          "quantity": 2
+        },
+        {
+          "id": "3",
+          "name": "Gentle Monster Milky Way 02P",
+          "price": 47000,
+          "img": "/images/item10.png",
+          "imga": "/images/item10a.png",
+          "brand": "Gentle Monster",
+          "category": "sunglasses",
+          "description": "Ultra-modern lensless design for a futuristic look. These glasses are perfect for high-fashion events, photoshoots, and statement-making appearances.",
+          "features": [
+            "Lensless transparent frame",
+            "Oversized futuristic design",
+            "Lightweight construction",
+            "Durable high-quality material",
+            "Avant-garde fashion statement",
+            "Comfortable fit",
+            "Perfect for creative styling"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Gentle Monster x TEKKEN 8",
+          "price": 52000,
+          "img": "/images/item6.png",
+          "imga": "/images/item6a.png",
+          "brand": "Gentle Monster",
+          "category": "sunglasses",
+          "description": "Inspired by TEKKEN 8, these sunglasses feature aggressive futuristic styling with premium materials and bold detailing for a standout appearance.",
+          "features": [
+            "Premium acetate frame",
+            "Unique TEKKEN collaboration design",
+            "UV400 lens protection",
+            "Ergonomic fit",
+            "Bold futuristic aesthetic",
+            "Durable construction",
+            "Perfect for collectors and fans"
+          ],
+          "quantity": 2
+        },
+        {
+          "id": "6",
+          "name": "Gentle Monster Post Human 01",
+          "price": 45000,
+          "img": "/images/item1.png",
+          "imga": "/images/item1a.png",
+          "brand": "Gentle Monster",
+          "category": "sunglasses",
+          "description": "A cutting-edge design with sculptural frames and futuristic details. Ideal for trendsetters who want to push the boundaries of fashion.",
+          "features": [
+            "Sculptural geometric frame",
+            "High-quality materials",
+            "Lightweight and durable",
+            "UV protection lenses",
+            "Avant-garde design",
+            "Comfortable fit",
+            "Perfect for fashion statement"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "4",
+          "name": "Clash de Cartier Precious",
+          "price": 130000,
+          "img": "/images/item11.png",
+          "imga": "/images/item11a.png",
+          "brand": "Cartier",
+          "category": "sunglasses",
+          "description": "Luxury eyewear with precious metal details and bold geometric design. These sunglasses blend elegance with a futuristic edge for a sophisticated yet daring look.",
+          "features": [
+            "High-quality acetate frame",
+            "Geometric futuristic design",
+            "Gold-plated accents",
+            "UV protection lenses",
+            "Comfortable fit",
+            "Durable and stylish",
+            "Elegant and bold statement"
+          ],
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Ray-Ban Meta Wayfarer Smart",
+          "price": 45000,
+          "img": "/images/item8.webp",
+          "imga": "/images/item8a.webp",
+          "brand": "Ray-Ban Meta",
+          "category": "smart_glasses",
+          "description": "Classic Wayfarer style meets cutting-edge AR technology. These smart glasses let you stay connected, capture moments, and interact with digital content seamlessly while maintaining iconic Ray-Ban style.",
+          "features": [
+            "Built-in AR display",
+            "Voice assistant integration",
+            "Bluetooth audio and calls",
+            "Camera for photo and video capture",
+            "Touch control on frame",
+            "Lightweight comfortable design",
+            "Stylish Wayfarer aesthetic"
+          ],
+          "quantity": 3
+        },
+        {
+          "id": "3",
+          "name": "Gentle Monster Milky Way 02P",
+          "price": 47000,
+          "img": "/images/item10.png",
+          "imga": "/images/item10a.png",
+          "brand": "Gentle Monster",
+          "category": "sunglasses",
+          "description": "Ultra-modern lensless design for a futuristic look. These glasses are perfect for high-fashion events, photoshoots, and statement-making appearances.",
+          "features": [
+            "Lensless transparent frame",
+            "Oversized futuristic design",
+            "Lightweight construction",
+            "Durable high-quality material",
+            "Avant-garde fashion statement",
+            "Comfortable fit",
+            "Perfect for creative styling"
+          ],
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "username": "junaid",
+      "password": "pass123",
+      "email": "b@b"
+    },
+    {
+      "id": "806d",
+      "username": "2@2",
+      "email": "2@2",
+      "password": "1234",
+      "cart": []
+    },
+    {
+      "id": "ed18",
+      "username": "a@a",
+      "email": "vvvv@cc",
+      "password": "ddddd",
+      "cart": []
+    },
+    {
+      "id": "a0e2",
+      "username": "ddd",
+      "email": "dddnj22jh2@jjj",
+      "password": "dddd",
+      "cart": []
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Dystopian Verge, bold spirit",
+      "price": 60000,
+      "img": "/images/item13.png",
+      "imga": "/images/item13a.png",
+      "brand": "Dystopian Verge",
+      "category": "sunglasses",
+      "description": "Bold and futuristic, these glasses embody a post-apocalyptic aesthetic with sharp angles, sleek carbon fiber frames, and a striking visual presence. Perfect for fashion-forward individuals seeking an avant-garde statement.",
+      "features": [
+        "Carbon fiber lightweight frame",
+        "Futuristic angular design",
+        "UV400 protection lenses",
+        "Anti-glare coating",
+        "Adjustable nose pads",
+        "Bold fashion statement",
+        "High durability"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Ray-Ban Meta Wayfarer Smart",
+      "price": 45000,
+      "img": "/images/item8.webp",
+      "imga": "/images/item8a.webp",
+      "brand": "Ray-Ban Meta",
+      "category": "smart_glasses",
+      "description": "Classic Wayfarer style meets cutting-edge AR technology. These smart glasses let you stay connected, capture moments, and interact with digital content seamlessly while maintaining iconic Ray-Ban style.",
+      "features": [
+        "Built-in AR display",
+        "Voice assistant integration",
+        "Bluetooth audio and calls",
+        "Camera for photo and video capture",
+        "Touch control on frame",
+        "Lightweight comfortable design",
+        "Stylish Wayfarer aesthetic"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Gentle Monster Milky Way 02P",
+      "price": 47000,
+      "img": "/images/item10.png",
+      "imga": "/images/item10a.png",
+      "brand": "Gentle Monster",
+      "category": "sunglasses",
+      "description": "Ultra-modern lensless design for a futuristic look. These glasses are perfect for high-fashion events, photoshoots, and statement-making appearances.",
+      "features": [
+        "Lensless transparent frame",
+        "Oversized futuristic design",
+        "Lightweight construction",
+        "Durable high-quality material",
+        "Avant-garde fashion statement",
+        "Comfortable fit",
+        "Perfect for creative styling"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Clash de Cartier Precious",
+      "price": 130000,
+      "img": "/images/item11.png",
+      "imga": "/images/item11a.png",
+      "brand": "Cartier",
+      "category": "sunglasses",
+      "description": "Luxury eyewear with precious metal details and bold geometric design. These sunglasses blend elegance with a futuristic edge for a sophisticated yet daring look.",
+      "features": [
+        "High-quality acetate frame",
+        "Geometric futuristic design",
+        "Gold-plated accents",
+        "UV protection lenses",
+        "Comfortable fit",
+        "Durable and stylish",
+        "Elegant and bold statement"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Gentle Monster x TEKKEN 8",
+      "price": 52000,
+      "img": "/images/item6.png",
+      "imga": "/images/item6a.png",
+      "brand": "Gentle Monster",
+      "category": "sunglasses",
+      "description": "Inspired by TEKKEN 8, these sunglasses feature aggressive futuristic styling with premium materials and bold detailing for a standout appearance.",
+      "features": [
+        "Premium acetate frame",
+        "Unique TEKKEN collaboration design",
+        "UV400 lens protection",
+        "Ergonomic fit",
+        "Bold futuristic aesthetic",
+        "Durable construction",
+        "Perfect for collectors and fans"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Gentle Monster Post Human 01",
+      "price": 45000,
+      "img": "/images/item1.png",
+      "imga": "/images/item1a.png",
+      "brand": "Gentle Monster",
+      "category": "sunglasses",
+      "description": "A cutting-edge design with sculptural frames and futuristic details. Ideal for trendsetters who want to push the boundaries of fashion.",
+      "features": [
+        "Sculptural geometric frame",
+        "High-quality materials",
+        "Lightweight and durable",
+        "UV protection lenses",
+        "Avant-garde design",
+        "Comfortable fit",
+        "Perfect for fashion statement"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "XREAL One Pro AR Glasses",
+      "price": 60000,
+      "img": "/images/item2.png",
+      "imga": "/images/item2a.png",
+      "brand": "XREAL",
+      "category": "smart_glasses",
+      "description": "AR glasses designed for immersive experiences, offering high-resolution display and intuitive gesture controls for a futuristic wearable experience.",
+      "features": [
+        "Augmented reality display",
+        "Gesture-based control",
+        "Lightweight design",
+        "HD resolution visuals",
+        "Compatible with multiple devices",
+        "Stylish modern frame",
+        "Comfortable extended wear"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Gentle Monster x Warcraft",
+      "price": 50000,
+      "img": "/images/item3.png",
+      "imga": "/images/item3a.png",
+      "brand": "Gentle Monster",
+      "category": "sunglasses",
+      "description": "Inspired by World of Warcraft, these glasses combine gaming fantasy with futuristic fashion, featuring bold lines and intricate detailing.",
+      "features": [
+        "Gaming-inspired design",
+        "Futuristic frame style",
+        "High-quality materials",
+        "UV400 lens protection",
+        "Lightweight and comfortable",
+        "Collector’s edition aesthetic",
+        "Unique collaboration detailing"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Gentle Monster Third Kind C1",
+      "price": 48000,
+      "img": "/images/item4.png",
+      "imga": "/images/item4a.png",
+      "brand": "Gentle Monster",
+      "category": "sunglasses",
+      "description": "Sleek, modern glasses with minimalist yet futuristic frame design. Perfect for daily wear with a style-forward edge.",
+      "features": [
+        "Minimalist futuristic frame",
+        "Lightweight acetate",
+        "UV protection lenses",
+        "Ergonomic fit",
+        "Durable construction",
+        "Everyday style-forward look",
+        "High-quality craftsmanship"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Lenovo ThinkReality A3 Smart",
+      "price": 70000,
+      "img": "/images/item5.png",
+      "imga": "/images/item5a.png",
+      "brand": "Lenovo",
+      "category": "smart_glasses",
+      "description": "AR smart glasses built for productivity, featuring dual displays, voice commands, and lightweight ergonomic design for extended use.",
+      "features": [
+        "Dual AR displays",
+        "Voice command integration",
+        "Lightweight ergonomic frame",
+        "HD visuals and graphics",
+        "Bluetooth connectivity",
+        "Long battery life",
+        "Professional and stylish"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Rokid Air AR Glasses",
+      "price": 55000,
+      "img": "/images/item7.png",
+      "imga": "/images/item7a.png",
+      "brand": "Rokid",
+      "category": "smart_glasses",
+      "description": "AR glasses that combine sleek modern design with immersive display technology for interactive entertainment and productivity.",
+      "features": [
+        "High-definition AR display",
+        "Voice interaction support",
+        "Lightweight ergonomic design",
+        "Interactive apps support",
+        "Bluetooth connectivity",
+        "Comfortable for long wear",
+        "Futuristic aesthetic"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Cartier Première Precious Mount",
+      "price": 120000,
+      "img": "/images/item9.png",
+      "imga": "/images/item9a.png",
+      "brand": "Cartier",
+      "category": "optical_frames",
+      "description": "Luxury optical frames with elegant details and sophisticated design, offering style and comfort for daily wear.",
+      "features": [
+        "Premium acetate frame",
+        "Elegant geometric design",
+        "Comfortable fit",
+        "Durable high-quality material",
+        "Perfect for formal and casual wear",
+        "High-fashion statement",
+        "Precision craftsmanship"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Oakley Meta HSTN AI Smart",
+      "price": 55000,
+      "img": "/images/item12a.webp",
+      "imga": "/images/item12b.webp",
+      "brand": "Oakley",
+      "category": "smart_glasses",
+      "description": "Smart glasses designed for active lifestyles, with AI features, augmented visuals, and durable sport-ready frames.",
+      "features": [
+        "AI-enabled features",
+        "Augmented reality display",
+        "Lightweight durable frame",
+        "Ergonomic sport design",
+        "Bluetooth audio support",
+        "Comfortable for extended use",
+        "Sleek futuristic style"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Dystopian Verge, carbon black",
+      "price": 62000,
+      "img": "/images/item14.png",
+      "imga": "/images/item14a.png",
+      "brand": "Dystopian Verge",
+      "category": "sunglasses",
+      "description": "Futuristic bold carbon black glasses with strong posthuman styling, perfect for statement looks and avant-garde fashion.",
+      "features": [
+        "Carbon fiber frame",
+        "Matte black finish",
+        "UV protection lenses",
+        "Lightweight design",
+        "Futuristic sculptural aesthetic",
+        "High durability",
+        "Bold fashion statement"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Solos AirGo™ 3 Smartglasses",
+      "price": 65000,
+      "img": "/images/item15.png",
+      "imga": "/images/item15a.png",
+      "brand": "Solos",
+      "category": "smart_glasses",
+      "description": "High-tech smartglasses for cycling and sports, offering real-time display, notifications, and ergonomic lightweight design.",
+      "features": [
+        "Heads-up display",
+        "Bluetooth connectivity",
+        "Lightweight ergonomic frame",
+        "Real-time notifications",
+        "Compatible with sports apps",
+        "Comfortable for long wear",
+        "Durable materials"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Gentle Monster Marine Serre",
+      "price": 58000,
+      "img": "/images/item16.png",
+      "imga": "/images/item16a.png",
+      "brand": "Gentle Monster",
+      "category": "sunglasses",
+      "description": "Futuristic and sleek sunglasses with translucent elements and cutting-edge design, perfect for fashion-forward appearances.",
+      "features": [
+        "Translucent avant-garde frame",
+        "UV protection lenses",
+        "Lightweight construction",
+        "High-fashion design",
+        "Ergonomic fit",
+        "Durable and stylish",
+        "Perfect for statement styling"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "MYKITA 032c CO BEAR",
+      "price": 53000,
+      "img": "/images/item17.png",
+      "imga": "/images/item17a.png",
+      "brand": "MYKITA",
+      "category": "sunglasses",
+      "description": "Modern luxury sunglasses with bold shapes and durable materials, combining comfort and high-fashion aesthetics.",
+      "features": [
+        "Bold geometric design",
+        "High-quality acetate frame",
+        "UV400 lens protection",
+        "Lightweight and comfortable",
+        "Durable construction",
+        "Modern luxury aesthetic",
+        "Perfect for daily wear and fashion statement"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "MYKITA DECADES SIERRA",
+      "price": 54000,
+      "img": "/images/item18.png",
+      "imga": "/images/item18a.png",
+      "brand": "MYKITA",
+      "category": "sunglasses",
+      "description": "Sleek contemporary sunglasses with futuristic styling, ideal for both casual wear and high-fashion events.",
+      "features": [
+        "Contemporary geometric frame",
+        "High-quality durable materials",
+        "UV protection lenses",
+        "Lightweight design",
+        "Comfortable for extended wear",
+        "Avant-garde aesthetic",
+        "Perfect for fashion-forward styling"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Cartier Panthère",
+      "price": 140000,
+      "img": "/images/item19.png",
+      "imga": "/images/item19a.png",
+      "brand": "Cartier",
+      "category": "sunglasses",
+      "description": "Iconic luxury eyewear with timeless design and exquisite finishing, combining elegance with a futuristic flair.",
+      "features": [
+        "Premium metal and acetate frame",
+        "UV protection lenses",
+        "Timeless luxury design",
+        "Ergonomic comfortable fit",
+        "Durable and high-quality",
+        "Fashion-forward statement",
+        "Exquisite finishing"
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Gentle Monster BOLD Collection",
+      "price": 56000,
+      "img": "/images/item20.png",
+      "imga": "/images/item20a.png",
+      "brand": "Gentle Monster",
+      "category": "sunglasses",
+      "description": "Striking futuristic design with bold frames and intricate detailing, perfect for standing out in any fashion scenario.",
+      "features": [
+        "Bold avant-garde frame",
+        "UV protection lenses",
+        "Lightweight construction",
+        "Durable high-quality materials",
+        "Comfortable fit",
+        "Futuristic styling",
+        "Perfect for statement looks"
+      ]
+    }
+  ],
+  "cart": [],
+  "orders": []
+}

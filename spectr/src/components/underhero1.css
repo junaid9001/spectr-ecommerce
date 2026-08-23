@@ -1,0 +1,348 @@
+@font-face {
+  font-family: "font3";
+  src: url("./../fonts/font3.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Root container matching the snap scroll height */
+.underhero1-root {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff; /* Pure white background from mockup */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.underhero1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* Left Side Vertical Page Indicator */
+.uh1-vertical-indicator {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.indicator-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  color: rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.indicator-num.active {
+  color: #000;
+  font-weight: 700;
+}
+
+.indicator-line {
+  width: 1px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Outline Circle Centered behind Video */
+.uh1-outline-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(340px, 35vw, 550px);
+  height: clamp(340px, 35vw, 550px);
+  border: 1.2px solid rgba(0, 0, 0, 0.05); /* Thin elegant circle stroke */
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Video Wrapper centered inside the outline circle */
+.uh1-video-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(280px, 28vw, 440px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Below the grid overlay */
+  pointer-events: none;
+}
+
+.video1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: linear-gradient(
+      to right,
+      rgba(195, 195, 195, 0.15) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 100px 100px;
+  z-index: 2; /* Above video, below typography */
+}
+
+/* Slogan wrapper behind the video but in front of circle */
+.uh1-slogan-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  box-sizing: border-box;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.side-text {
+  font-size: clamp(2.4rem, 6vw, 5.6rem);
+  font-weight: bold;
+  color: #000; /* High contrast black text */
+  font-family: "font3", sans-serif;
+  letter-spacing: 0.12em;
+  pointer-events: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.left-text {
+  margin-left: 2%;
+}
+
+.right-text {
+  margin-right: 2%;
+}
+
+/* Bottom Technical Specs Grid */
+.uh1-bottom-grid {
+  position: absolute;
+  bottom: clamp(30px, 5.5vh, 60px);
+  left: 4%;
+  right: 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 3;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.uh1-bottom-left,
+.uh1-bottom-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  font-family: 'IBM Plex Mono', monospace;
+  pointer-events: none;
+}
+
+.specs-title {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2px;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.specs-body {
+  font-size: 0.65rem;
+  color: #777;
+  margin-top: 8px;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+/* Right side specs withLarge Large Number */
+.uh1-bottom-right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.num-large {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+/* Center Bottom Explore link & dot indicator */
+.uh1-bottom-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  margin-bottom: -15px; /* Pull down slightly to balance */
+}
+
+.btn-explore-center {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.btn-explore-center:hover {
+  opacity: 0.6;
+}
+
+.explore-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.indicator-vertical-line {
+  width: 1px;
+  height: 30px;
+  background-color: #000;
+}
+
+.indicator-vertical-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-top: -1px;
+}
+
+/* Responsive tablet overrides */
+@media (max-width: 950px) {
+  .side-text {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+  .uh1-outline-circle {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+  .underhero1-root {
+    height: auto;
+    padding: 60px 4%; /* Generous vertical breathing room */
+  }
+
+  .underhero1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Vertically stack elements cleanly with gap spacing */
+  }
+
+  /* Hide vertical page indicator on mobiles */
+  .uh1-vertical-indicator {
+    display: none;
+  }
+
+  /* Hide bottom left and right spec texts to prevent clutter */
+  .uh1-bottom-left,
+  .uh1-bottom-right {
+    display: none;
+  }
+
+  /* Stack Slogans vertically in the flow */
+  .uh1-slogan-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    z-index: 3;
+  }
+
+  .side-text {
+    font-size: 2.2rem;
+    margin: 0 !important; /* Reset margins from desktop */
+  }
+
+  /* Make video wrapper relative to take up natural height in document flow */
+  .uh1-video-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: min(240px, 60vw);
+    height: auto;
+    z-index: 2;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Position explore button underneath the video block */
+  .uh1-bottom-grid {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 4;
+  }
+
+  .uh1-bottom-center {
+    margin-bottom: 0;
+  }
+
+  .indicator-vertical-line {
+    height: 25px;
+  }
+}

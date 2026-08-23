@@ -1,0 +1,177 @@
+/* Core Auth Page Layout */
+.auth-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Centered Form Wrapper */
+.auth-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 60px 20px; /* Offset for floating navbar */
+  position: relative;
+  z-index: 2;
+}
+
+/* Premium Minimalist Auth Card */
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none; /* Keep it flat and raw */
+}
+
+/* Title & Header Slogans */
+.auth-title {
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.8rem;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.auth-subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subtitle-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* Monospace Form Fields */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.auth-field-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.auth-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.auth-input {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.auth-input::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 0.85rem;
+}
+
+.auth-input:focus {
+  border-bottom-color: #000; /* Minimal focus indicator */
+}
+
+/* Error/Notification banner */
+.auth-error {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  color: #fe002a;
+  background-color: rgba(254, 0, 42, 0.05);
+  border: 1px solid rgba(254, 0, 42, 0.15);
+  padding: 12px;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Button & Links */
+.auth-btn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.auth-footer {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+}
+
+.auth-link {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1px;
+  transition: opacity 0.3s ease;
+}
+
+.auth-link:hover {
+  opacity: 0.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .auth-card {
+    border: none;
+    padding: 30px 10px;
+  }
+}

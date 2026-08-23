@@ -1,0 +1,311 @@
+/* ===== PROFILE PAGE — Premium Editorial Layout ===== */
+
+.profile-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 120px clamp(20px, 5vw, 80px) 60px;
+}
+
+/* Page Title */
+.profile-title {
+  font-family: 'Michroma', sans-serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0 auto 50px;
+  max-width: 1100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+/* Two-column layout */
+.profile-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Section Labels (Space Grotesk style) */
+.profile-section-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+/* Left Column: Client Details */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.profile-info-block {
+  margin-bottom: 24px;
+}
+
+.profile-info-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.45);
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.profile-info-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Saved Address section */
+.profile-address-box {
+  margin-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 24px;
+  margin-bottom: 30px;
+}
+
+.profile-address-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+}
+
+.profile-logout-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: 14px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.profile-logout-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Right Column: Recent Orders */
+.profile-orders {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.orders-empty {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Individual Order Row */
+.order-card {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 24px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.order-card:first-of-type {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.order-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background-color: #fcfcfc;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.order-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.order-name {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #000;
+  margin: 0;
+}
+
+.order-qty {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.order-price {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Buy Again Button styling */
+.buy-again-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: fit-content;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+}
+
+.buy-again-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .order-card {
+    grid-template-columns: 60px 1fr;
+    gap: 16px;
+  }
+
+  .order-price {
+    grid-column: 1 / -1;
+    text-align: right;
+    margin-top: -10px;
+  }
+}
+
+/* New Profile Dashboard Styles */
+.profile-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.recent-order-overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+
+.overview-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.overview-status {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.view-all-history-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 25px;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease;
+  text-align: left;
+}
+
+.view-all-history-btn:hover {
+  opacity: 0.6;
+}
+
+/* Custom Clean Toast Message */
+.editorial-toast {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #000;
+  color: #fff;
+  padding: 16px 30px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  z-index: 10000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: slideUpToast 0.35s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes slideUpToast {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

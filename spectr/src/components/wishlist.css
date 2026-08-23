@@ -1,0 +1,248 @@
+/* ===== DEDICATED WISHLIST PAGE — Premium Editorial Layout ===== */
+
+.wishlist-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 120px clamp(20px, 5vw, 80px) 60px;
+}
+
+/* Page Header & Navigation Link */
+.wishlist-header {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.wishlist-title {
+  font-family: 'Michroma', sans-serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0;
+}
+
+.wishlist-count {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  color: rgba(0, 0, 0, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Empty State */
+.wishlist-empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wishlist-empty-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.wishlist-empty-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Grid layout (Inherits matching catalog styling) */
+.wishlist-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.wishlist-card {
+  background-color: #fff;
+  padding: 40px;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-card:hover {
+  background-color: #fafafa;
+}
+
+.wishlist-card .product-image-container {
+  background-color: #f9f9f9;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-card:hover .product-image-container {
+  background-color: #f2f2f2;
+}
+
+.wishlist-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.wishlist-card:hover .wishlist-image {
+  transform: scale(1.05);
+}
+
+/* Details and Actions */
+.wishlist-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.wishlist-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.wishlist-name {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 0 10px 0;
+  line-height: 1.35;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+.wishlist-price {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+}
+
+.wishlist-remove-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.wishlist-remove-btn:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.wishlist-add-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 14px 20px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 24px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.wishlist-add-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .wishlist-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Custom Clean Toast Message */
+.editorial-toast {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #000;
+  color: #fff;
+  padding: 16px 30px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  z-index: 10000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: slideUpToast 0.35s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes slideUpToast {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

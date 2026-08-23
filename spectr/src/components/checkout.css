@@ -1,0 +1,313 @@
+/* ===== CHECKOUT PAGE — Premium Editorial Layout ===== */
+
+.checkout-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 120px clamp(20px, 5vw, 80px) 60px;
+}
+
+/* Two-column layout */
+.checkout-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Page Header */
+.checkout-header {
+  grid-column: 1 / -1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.checkout-title {
+  font-family: 'Michroma', sans-serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0 0 15px 0;
+}
+
+/* Progress steps indicator */
+.checkout-steps {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.checkout-step-active {
+  color: #000;
+}
+
+.checkout-step-divider {
+  width: 40px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Left Column: Shipping Form */
+.checkout-form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-section-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.checkout-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.checkout-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.checkout-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.45);
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.checkout-input {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: #000;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.checkout-input::placeholder {
+  color: rgba(0, 0, 0, 0.22);
+  font-size: 0.85rem;
+}
+
+.checkout-input:focus {
+  border-bottom-color: #000;
+}
+
+/* Right Column: Order Summary */
+.checkout-summary {
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  position: sticky;
+  top: 130px;
+  text-align: left;
+}
+
+.checkout-summary-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Summary Item Row */
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.checkout-item-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
+  color: #000;
+  flex: 1;
+}
+
+.checkout-item-qty {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0 16px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.checkout-item-price {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
+  color: #000;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Summary Total */
+.checkout-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.checkout-total-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.checkout-total-value {
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* Place Order Button */
+.checkout-pay-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: 16px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.checkout-pay-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Trust Badges and Cards logos */
+.checkout-payment-methods {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.payment-methods-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.45);
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  display: block;
+}
+
+.payment-methods-icons {
+  display: flex;
+  gap: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.payment-icon {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 4px 8px;
+  letter-spacing: 0.5px;
+  font-size: 0.65rem;
+}
+
+.checkout-stripe-badge {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.68rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-top: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Empty State */
+.checkout-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.checkout-empty-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .checkout-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .checkout-summary {
+    position: static;
+  }
+}
